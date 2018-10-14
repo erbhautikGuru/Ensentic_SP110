@@ -39,8 +39,8 @@ void setup() {
 
     if(c == 'Y')
     {
-      Serial.println("\r\nPlease give me some time to test this DRY soil , probabaly around 20 seconds");
-      delay(22000);
+      Serial.println("\r\nPlease give me some time to test this DRY soil , probabaly around 30 seconds");
+      delay(32000);
       Serial.print("\r\nNow Provide the approx moisture percentage of this DRY soil (range between 0-100) :- ");
       while(Serial.available() == 0){}
       a = Serial.parseInt();
@@ -53,8 +53,8 @@ void setup() {
         c = Serial.read();
         if(c == 'Y')
         {
-          Serial.println("\r\nPlease give me some time to test this WET soil , probabaly around 20 seconds");
-          delay(22000);
+          Serial.println("\r\nPlease give me some time to test this WET soil , probabaly around 30 seconds");
+          delay(32000);
            Serial.print("\r\nNow Provide the approx moisture percentage of this wet soil (range between 0-100) :- ");
            while(Serial.available() == 0){}
            a = Serial.parseInt();

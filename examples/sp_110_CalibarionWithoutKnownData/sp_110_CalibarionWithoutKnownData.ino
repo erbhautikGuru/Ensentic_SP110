@@ -39,8 +39,8 @@ void setup() {
 
     if(c == 'Y')
     {
-      Serial.println("Please give me some time to test this dry soil , probabaly around 15 seconds");
-      delay(22000);
+      Serial.println("Please give me some time to test this dry soil , probabaly around 30 seconds");
+      delay(32000);
 
       if(sp110.calDryPointCovered() == 1)
       {
@@ -50,8 +50,8 @@ void setup() {
         c = Serial.read();
         if(c == 'Y')
         {
-          Serial.println("Please give me some time to test this WET soil , probabaly around 15 seconds");
-          delay(22000);
+          Serial.println("Please give me some time to test this WET soil , probabaly around 30 seconds");
+          delay(32000);
           if(sp110.calWetPointCovered() == 1)
           {
             sp110.saveCalibrationWithoutKnownData();
